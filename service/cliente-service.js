@@ -16,15 +16,15 @@ const criaNovaLinha = (nome, email, id) => {
 
 const tabela = document.querySelector('[data-tabela]')
 
-const http = new XMLHttpRequest()
-
-http.open('GET', 'http://localhost:3000/profile')
-
-http.send()
-
-http.onload = () => {
-    const data = JSON.parse(http.response)
-    data.forEach(elemento => {
-        tabela.appendChild(criaNovaLinha(elemento.nome, elemento.email, elemento.id))
+const listaClientes = () => {
+    return fetch(`http://localhost:3000/profile`)
+    .then (resposta => {
+        return resposta.json()
     })
 }
+
+listaClientes()
+.then(data => {
+    data.forEach(elemento => {
+        tabela.appendChild(criaNovaLinha(elemento.nome, elemento.email, elemento.id))
+})})
