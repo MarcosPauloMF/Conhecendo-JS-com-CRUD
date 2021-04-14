@@ -4,6 +4,34 @@
       "nome": "felipe",
       "email": "felipe@alura.com",
       "id": 1
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "nome": "Marcos Paulo Martins Ferreira",
+      "email": "marcos.mpmf43@gmail.com",
+      "id": 8
+    },
+    {
+      "nome": "teste",
+      "email": "teste@teste.com.br",
+      "id": 9
     }
   ]
 }
