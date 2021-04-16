@@ -11,3 +11,4 @@ formulario.addEventListener('submit', (evento) => {
         window.location.href = '../telas/cadastro_concluido.html'
     })
 })
+
